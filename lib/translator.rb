@@ -15,11 +15,10 @@ end
 def get_japanese_emoticon(file, emoticon)
   new_hash = load_library(file)
   sad_message = "Sorry, that emoticon was not found"
+  
   new_hash[:get_emoticon].each_pair { |english_emoticon, japanese_emoticon| 
     if english_emoticon == emoticon then
       return japanese_emoticon
-    else
-      return sad_message
     end 
   }
   
