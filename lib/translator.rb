@@ -1,6 +1,7 @@
 # require modules here
 
 def load_library(file)
+  emoticons_hash = Hash.new
   emoticons_hash = file
   print(emoticons_hash)
 end
