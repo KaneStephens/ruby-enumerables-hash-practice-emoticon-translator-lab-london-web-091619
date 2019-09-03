@@ -13,7 +13,7 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, emoticon)
-  new_hash = final_hash[:get_meaning][emoticon[1]]
+  new_hash = YAML.load_file(file)
 end
 
 def get_english_meaning
