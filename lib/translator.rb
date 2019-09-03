@@ -6,7 +6,7 @@ def load_library(file)
   
   emoticons_hash.each_pair { |name, emoticon|
     final_hash[:get_meaning][emoticon[1]] = name
-    final_hash[:get_emoticon][emoticon[0]] = final_hash[:get_meaning][emoticon[1]]
+    final_hash[:get_emoticon][emoticon[0]] = emoticon[1]
   }  
   
   print(emoticons_hash)
