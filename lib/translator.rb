@@ -23,7 +23,6 @@ def get_japanese_emoticon(file, emoticon)
       return japanese_emoticon 
     end 
   }
-  
 end
 
 def get_english_meaning
