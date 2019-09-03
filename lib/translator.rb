@@ -27,4 +27,15 @@ end
 
 def get_english_meaning(file, emoticon)
   new_hash = load_library(file)
+  sad_message = "Sorry, that emoticon was not found"
+  
+  new_hash[:get_meaning].each_pair { |japanese_emoticon, english_name| 
+    if new_hash[:get_meaning].has_key?(emoticon) == false then
+      return sad_message
+    elsif japanese_emoticon == emoticon then
+      return english_name
+    end 
+  }
 end
+
+
