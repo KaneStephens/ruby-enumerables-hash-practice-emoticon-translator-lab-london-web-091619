@@ -9,11 +9,10 @@ def load_library(file)
     final_hash[:get_emoticon][emoticon[0]] = emoticon[1]
   }  
   
-  print(emoticons_hash)
   return final_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emoticon)
   # code goes here
 end
 
