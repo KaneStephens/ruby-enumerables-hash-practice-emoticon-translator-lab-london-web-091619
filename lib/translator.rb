@@ -2,7 +2,7 @@
 
 def load_library(file)
   emoticons_hash = file
-  return emoticons_hash
+  print(emoticons_hash)
 end
 
 def get_japanese_emoticon
