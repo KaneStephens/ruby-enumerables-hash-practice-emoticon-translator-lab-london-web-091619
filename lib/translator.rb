@@ -21,7 +21,6 @@ def get_japanese_emoticon(file, emoticon)
       return japanese_emoticon unless
         new_hash[:get_emoticon].has_key?(emoticon) == false then
           return sad_message
-        end
     end 
   }
   
