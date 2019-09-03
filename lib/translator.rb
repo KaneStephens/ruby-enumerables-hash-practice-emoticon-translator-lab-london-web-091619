@@ -18,6 +18,8 @@ def get_japanese_emoticon(file, emoticon)
   new_hash[:get_emoticon].each_pair { |english_emoticon, japanese_emoticon| 
     if english_emoticon == emoticon then
       return japanese_emoticon
+    else
+      
     end 
   }
   
